@@ -5,7 +5,7 @@ require 'pry'
 
 #Test your code here
 jason = Employee.new("Jason", 50000, "Belle")
-ben = Employee.new("Jason", 80000, "Belle")
+ben = Employee.new("Ben", 80000, "Mia")
 fiona = Employee.new("Fiona", 60000, "Belle")
 
 belle = Manager.new("Belle", "sales", 27)
