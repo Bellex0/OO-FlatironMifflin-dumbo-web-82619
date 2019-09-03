@@ -13,6 +13,22 @@ def self.all
   @@all
 end
 
+def self.paid_over(over_salary)
+  self.all.select do |employee|
+    employee.salary > over_salary
+  end
+end
+
+def self.find_by_department(name)
+  manager = Manager.all.select do |manager|
+    manager.department == name
+  end
+  self.all.find do |employee|
+    employee.manager_name == manager
+  end
+end
+    
+
 end
 
 
