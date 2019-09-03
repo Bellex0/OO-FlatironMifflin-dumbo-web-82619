@@ -30,7 +30,7 @@ def self.all_departments
   end
 end
 
-def average_age 
+def self.average_age 
   ages =  self.all.map do |age|
     manager.age
   end
