@@ -24,7 +24,7 @@ def self.find_by_department(name)
     manager.department == name
   end
   employee.manager_name == manager
-  # end# self.all.find do |employee|
+  ## 
   #   
 end
     
