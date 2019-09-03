@@ -25,7 +25,12 @@ def hire_employee(name, salary)
 end
 
 def self.all_departments
-  employees
+  self.all.map do |department|
+    manager.department 
+  end
+end
+
+def 
   
   
 
