@@ -6,7 +6,6 @@ def initialize(name, department, age)
   @name = name
   @department = department
   @age = age
-  = manager_name
   @@all << self
 end
 
