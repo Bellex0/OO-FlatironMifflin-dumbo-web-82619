@@ -13,6 +13,14 @@ def self.all
   @@all
 end
 
+def employees
+  Employee.all.select do |employee|
+    employee.manager_name == self
+  end
+end
+
+def hire_employee(name, salary)
+
 
 
 end
