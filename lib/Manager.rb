@@ -30,7 +30,12 @@ def self.all_departments
   end
 end
 
-def 
+def average_age 
+  ages =  self.all.map do |age|
+    manager.age
+  end
+  (ages.sum.to_f) / (ages.length.to_f)
+end
   
   
 
