@@ -20,6 +20,7 @@ def employees
 end
 
 def hire_employee(name, salary)
+  Employee.new(name, salary, )
 
 
 
