@@ -20,7 +20,13 @@ def employees
 end
 
 def hire_employee(name, salary)
-  Employee.new(name, salary, )
+  new_emp = Employee.new(name, salary, self)
+  employees << new_emp
+end
+
+def self.all_departments
+  
+  
 
 
 
